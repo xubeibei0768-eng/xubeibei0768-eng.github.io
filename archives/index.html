@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Xubeibei &#39; s  study note</title>
+<link rel="shortcut icon" href="https://xubeibei0768-eng.github.io/favicon.ico?v=1771648205667">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://xubeibei0768-eng.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Xubeibei &#39; s  study note - Atom Feed" href="https://xubeibei0768-eng.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=&lt;script&gt; document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     // 1. 定义我们要调用的 API 地址 (这里用的是一言 API)     const apiUrl = &#39;https://v1.hitokoto.cn/?c=i&amp;c=d&#39;; // c=i 代表诗词，c=d 代表文学          // 2. 找到网页上原本显示“网站描述”的地方     // 注意：不同主题这个 class 可能不同，Notes 主题通常是 .site-description 或 .description     // 如果不生效，我们尝试暴力查找     let descElement = document.querySelector(&#39;.site-description&#39;);     if (!descElement) {         descElement = document.querySelector(&#39;.description&#39;);     }      // 3. 如果找到了位置，就开始表演     if (descElement) {         // 先清空原本的静态文字         descElement.innerHTML = &#39;Loading...&#39;;         descElement.style.opacity = 0.6;                   // 发起网络请求         fetch(apiUrl)             .then(response =&gt; response.json())             .then(data =&gt; {                 const text = data.hitokoto + &#34; —— &#34; + data.from;                 let index = 0;                 descElement.innerHTML = &#39;&#39;; // 清空                                  // 4. 打字机特效函数                 function typeWriter() {                     if (index &lt; text.length) {                         descElement.innerHTML += text.charAt(index);                         index++;                         setTimeout(typeWriter, 100); // 每 100 毫秒打一个字                     }                 }                                  // 开始打字                 typeWriter();             })             .catch(error =&gt; {                 console.error(&#39;API 请求失败:&#39;, error);                 descElement.innerHTML = &#34;Code is Poetry.&#34;; // 如果断网了，显示这句保底             });     } }); &lt;/script&gt;"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '&lt;script&gt; document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     // 1. 定义我们要调用的 API 地址 (这里用的是一言 API)     const apiUrl = &#39;https://v1.hitokoto.cn/?c=i&amp;c=d&#39;; // c=i 代表诗词，c=d 代表文学          // 2. 找到网页上原本显示“网站描述”的地方     // 注意：不同主题这个 class 可能不同，Notes 主题通常是 .site-description 或 .description     // 如果不生效，我们尝试暴力查找     let descElement = document.querySelector(&#39;.site-description&#39;);     if (!descElement) {         descElement = document.querySelector(&#39;.description&#39;);     }      // 3. 如果找到了位置，就开始表演     if (descElement) {         // 先清空原本的静态文字         descElement.innerHTML = &#39;Loading...&#39;;         descElement.style.opacity = 0.6;                   // 发起网络请求         fetch(apiUrl)             .then(response =&gt; response.json())             .then(data =&gt; {                 const text = data.hitokoto + &#34; —— &#34; + data.from;                 let index = 0;                 descElement.innerHTML = &#39;&#39;; // 清空                                  // 4. 打字机特效函数                 function typeWriter() {                     if (index &lt; text.length) {                         descElement.innerHTML += text.charAt(index);                         index++;                         setTimeout(typeWriter, 100); // 每 100 毫秒打一个字                     }                 }                                  // 开始打字                 typeWriter();             })             .catch(error =&gt; {                 console.error(&#39;API 请求失败:&#39;, error);                 descElement.innerHTML = &#34;Code is Poetry.&#34;; // 如果断网了，显示这句保底             });     } }); &lt;/script&gt;');
+</script>
+
+
+    <meta name="description" content="许梓豪 考研408 408经验贴 aiinfra学习笔记  " />
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://xubeibei0768-eng.github.io">
+  <img class="avatar" src="https://xubeibei0768-eng.github.io/images/avatar.png?v=1771648205667" alt="">
+  </a>
+  <h1 class="site-title">
+    Xubeibei &#39; s  study note
+  </h1>
+  <p class="site-description">
+    
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/xubeibei66/-.git" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://www.zhihu.com/people/zi-hao-di-di-91" target="_blank">
+          <i class="ri-zhihu-line"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+    
+        
+
+<div class="archives-container">
+  
+    <h2 class="year">2026</h2>
+    
+      
+        <a href="https://xubeibei0768-eng.github.io/post/zi-dong-wei-fen/" class="post">
+          <h2 class="post-title">
+            自动微分
+          </h2>
+          <div class="time">2026-02-21</div>
+        </a>
+      
+    
+      
+        <a href="https://xubeibei0768-eng.github.io/post/wo-de-di-yi-pian-bo-ke/" class="post">
+          <h2 class="post-title">
+            测试
+          </h2>
+          <div class="time">2026-01-25</div>
+        </a>
+      
+    
+  
+</div>
+
+    
+        <div class="pagination-container">
+  
+  
+</div>
+
+    
+        <div class="site-footer">
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=xubeibei0768@Gmail.com" target="_blank" rel="noopener noreferrer" style="position: fixed; bottom: 40px; right: 40px; background: #ffffff; color: #555555; padding: 12px 24px; border-radius: 50px; display: flex; align-items: center; gap: 10px; font-size: 14px; text-decoration: none; box-shadow: 0 4px 16px rgba(0,0,0,0.06); border: 1px solid #f0f0f0; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); z-index: 9999;" onmouseover="this.style.transform='translateY(-5px)'; this.style.color='#4a90e2'; this.style.boxShadow='0 12px 24px rgba(74,144,226,0.15)'; this.style.borderColor='#e2e8f0';" onmouseout="this.style.transform='translateY(0)'; this.style.color='#555555'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.06)'; this.style.borderColor='#f0f0f0';">
+    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    <span style="font-weight: 500; font-family: -apple-system, sans-serif;">xubeibei0768@Gmail.com</span>
+</a>
+
+<div id="reading-progress" style="position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: linear-gradient(90deg, #4a90e2, #63b3ed); z-index: 10000; transition: width 0.15s ease-out; pointer-events: none;"></div>
+
+<div style="text-align: center; margin: 40px 0 20px; font-size: 13px; color: #888; opacity: 0.8;">
+    <span id="runtime_span"></span>
+</div>
+
+<canvas id="tech-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // A. 运行时间逻辑
+    function show_runtime(){
+        let X = new Date("01/25/2026 00:00:00");
+        let Y = new Date();
+        let T = (Y.getTime()-X.getTime());
+        let M = 24*60*60*1000;
+        let A = Math.floor(T/M);
+        let B = Math.floor((T/M - A)*24);
+        let C = Math.floor(((T/M - A)*24 - B)*60);
+        let D = Math.floor((((T/M - A)*24 - B)*60 - C)*60);
+        document.getElementById("runtime_span").innerHTML="本站已稳定运行: "+A+"天"+B+"小时"+C+"分"+D+"秒";
+        setTimeout(show_runtime, 1000);
+    }
+    show_runtime();
+
+    // B. 进度条逻辑
+    window.addEventListener('scroll', () => {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        document.getElementById("reading-progress").style.width = (winScroll / height) * 100 + "%";
+    });
+
+    // C. 科技粒子背景
+    const canvas = document.getElementById('tech-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, particles = [], mouse = { x: null, y: null };
+    window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+    function init() {
+        width = canvas.width = window.innerWidth; height = canvas.height = window.innerHeight;
+        particles = Array.from({length: 45}, () => ({ x: Math.random()*width, y: Math.random()*height, vx: (Math.random()-0.5)*1.2, vy: (Math.random()-0.5)*1.2, r: Math.random()*2+1 }));
+    }
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        particles.forEach(p => {
+            p.x += p.vx; p.y += p.vy;
+            if (p.x<0 || p.x>width) p.vx *= -1; if (p.y<0 || p.y>height) p.vy *= -1;
+            if (mouse.x && Math.sqrt((mouse.x-p.x)**2+(mouse.y-p.y)**2)<150) { p.x+=(mouse.x-p.x)*0.015; p.y+=(mouse.y-p.y)*0.015; }
+            ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2); ctx.fillStyle = 'rgba(74, 144, 226, 0.5)'; ctx.fill();
+            particles.forEach(q => {
+                let d = Math.sqrt((p.x-q.x)**2+(p.y-q.y)**2);
+                if (d<115) { ctx.beginPath(); ctx.strokeStyle=`rgba(74,144,226,${(115-d)/550})`; ctx.lineWidth=0.7; ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y); ctx.stroke(); }
+            });
+        });
+        requestAnimationFrame(animate);
+    }
+    window.addEventListener('resize', init); init(); animate();
+
+    // D. 鼠标火花效果
+    document.addEventListener('click', (e) => {
+        const colors = ['#4a90e2', '#63b3ed', '#81ecec'];
+        for (let i = 0; i < 6; i++) {
+            const p = document.createElement('div');
+            p.style.cssText = `position:fixed;left:${e.clientX}px;top:${e.clientY}px;width:6px;height:6px;background:${colors[Math.floor(Math.random()*3)]};border-radius:50%;pointer-events:none;z-index:99999;`;
+            document.body.appendChild(p);
+            p.animate([{transform:'translate(-50%,-50%)',opacity:1},{transform:`translate(${(Math.random()-0.5)*120}px, ${(Math.random()-0.5)*120}px)`,opacity:0}], {duration:700}).onfinish=()=>p.remove();
+        }
+    });
+
+    // E. 代码一键复制
+    document.querySelectorAll('pre').forEach(b => {
+        b.style.position = 'relative';
+        const btn = document.createElement('button');
+        btn.innerText = 'Copy'; btn.style.cssText = "position:absolute;top:10px;right:10px;padding:4px 8px;font-size:11px;color:#888;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:4px;cursor:pointer;z-index:10;";
+        b.appendChild(btn);
+        btn.onclick = () => {
+            navigator.clipboard.writeText(b.querySelector('code').innerText).then(() => { btn.innerText = 'Copied!'; setTimeout(() => btn.innerText = 'Copy', 2000); });
+        };
+    });
+});
+</script>
+  <a class="rss" href="https://xubeibei0768-eng.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>
